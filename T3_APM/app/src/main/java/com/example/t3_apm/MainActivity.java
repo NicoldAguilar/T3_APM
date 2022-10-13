@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         EditText numero1 = findViewById(R.id.numero1);
         EditText numero2 = findViewById(R.id.numero2);
         TextView resultado = findViewById(R.id.resultado);
+        TextView operacioncurso = findViewById(R.id.operacioncurso);
 
         //Botones
         Button btnsuma = findViewById(R.id.btnsuma);
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 float num1 = Float.parseFloat(numero1.getText().toString());
                 float num2 = Float.parseFloat(numero2.getText().toString());
                 respuestaOperacion = num1 + num2;
+                operacioncurso.setText("SUMANDO");
             }
         });
 
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 float num1 = Float.parseFloat(numero1.getText().toString());
                 float num2 = Float.parseFloat(numero2.getText().toString());
                 respuestaOperacion = num1 - num2;
+                operacioncurso.setText("RESTANDO");
             }
         });
 
@@ -50,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 float num1 = Float.parseFloat(numero1.getText().toString());
                 float num2 = Float.parseFloat(numero2.getText().toString());
                 respuestaOperacion = num1 * num2;
+                operacioncurso.setText("MULTIPLICANDO");
             }
         });
 
@@ -60,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 float num1 = Float.parseFloat(numero1.getText().toString());
                 float num2 = Float.parseFloat(numero2.getText().toString());
                 respuestaOperacion = num1 / num2;
+                operacioncurso.setText("DIVIDIENDO");
             }
         });
 
