@@ -5,4 +5,5 @@ public class PeliEnt {
     public String nombre;
     public String sinopsis;
     public String imgURL;
+    public String imgbit64;
 }
